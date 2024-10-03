@@ -7,7 +7,6 @@
 body {
     background-color: blanchedalmond;
     
-    
 }
 
 .container {
@@ -16,7 +15,7 @@ body {
     height: 300px;
     border-radius: 10px;
     border: 2px solid black;
-
+     
 }
 
 .card {
@@ -30,20 +29,31 @@ body {
     
 }
 
-.top {
-    position: relative;
-    font-size: 40px;
-    bottom: 40%;
+.left {
+   position: relative;
+   bottom: 40%; 
+   font-size: 40px;
+
 }
 
-.center {
-    font-size: 80px;
-}
-
-.bottom {
+.right {
     position: relative;
     top: 40%;
-    transform: rotate(180deg);
     font-size: 40px;
-    
+    transform: rotate(180deg);
+
+}
+
+.middle {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-gap: 35px 25px;
+}
+
+.middle div {
+    font-size: 50px;
+}
+
+.middle div:nth-child(5), .middle div:nth-child(6) {
+    transform: rotate(180deg);
 }

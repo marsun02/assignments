@@ -7,10 +7,11 @@
 
 body {
     background-color: blanchedalmond;
+    width: 100%;
     align-items: center;
     display: flex;
-    width: 100%;
     flex-direction: column;
+    
 }
 
 h1 {
