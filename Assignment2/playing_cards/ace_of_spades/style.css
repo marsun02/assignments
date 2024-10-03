@@ -8,3 +8,45 @@
 body {
     background-color: blanchedalmond;
 }
+
+.container {
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.card {
+    border: solid;
+    border-radius: 10px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    padding: 10px;
+    margin: 100px;
+    width: 400px;
+    height: 600px;
+    background-color: white;
+    
+}
+
+.top {
+    padding: 5px 5px;
+    align-items: top;
+    font-size: 50px;
+}
+
+.center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 200px;
+}
+
+.bottom {
+    transform: rotate(180deg);
+    padding: 5px;
+    font-size: 50px;
+
+
+}
