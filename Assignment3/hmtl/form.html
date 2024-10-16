@@ -1,2 +1,41 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>User registration</h1>
+    <div class="registration"></div>
+    First Name: <input type="text" 
+                name="FirstName"    
+                placeholder="Ola" 
+                autofocus 
+                required> <br>
+    <br>Last Name: <input type="text" 
+                    name="LastName"
+                    placeholder="Nordmann"
+                    required> <br>
+    <br> Email (validation) <input type="email" 
+                            name="email"
+                            placeholder="example@mail.com"> <br>
+    <br> Password <input type="text" 
+                        name="password"
+                        minlength="8"
+                        placeholder="********"
+                        required> <br>
+    <br> Phone number <input type="text" 
+                            name="phone number"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                            placeholder="(123) 456-7890"> <br>
+    <br> Birthday <input type="date" 
+                        name="birthday"
+                        max=2006-01-01
+                        required> <small>You must be at least 18 years old by january 1st</small><br>
+    
+    
+
+                                
+</body>
 </html>
