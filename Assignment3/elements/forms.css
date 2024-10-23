@@ -20,13 +20,14 @@ h1 {
 }
 
 .registration {
-    margin-top: 50px;
-    width: 400px;
+    margin: 50px auto;
+    max-width: 600px;
     height: 200px;
+    padding: 20px;
     text-align: center;
     border: double;
-    border-radius: 25px;
+    border-radius: 8px;
     align-content: center;
-    background-color: antiquewhite;
+    background-color: rgb(126, 80, 21);
 
 }
