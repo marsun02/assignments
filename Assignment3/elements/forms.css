@@ -4,7 +4,14 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
-
+p {
+    font-size: 20px;
+    font-weight:300;
+    line-height: 24px;
+    margin-bottom: 5px;
+    color: black;
+    margin: 7px;
+}
 body {
     background-color: blanchedalmond;
     width: 100%;
@@ -14,19 +21,21 @@ body {
 
 }
 
-h1 {
-    margin-top: 30px;
-
+.header {
+    margin-top:10px;
+    padding: 5px;
 }
 
 .registration {
-    margin-top: 50px;
-    width: 400px;
-    height: 200px;
+    margin: 10px auto;
+    width: 50%;
+    height: 100%;
+    padding: 20px;
     text-align: center;
     border: double;
-    border-radius: 25px;
+    border-radius: 10px;
     align-content: center;
-    background-color: antiquewhite;
+    background-color:antiquewhite;
+    box-sizing: border-box;
 
 }
