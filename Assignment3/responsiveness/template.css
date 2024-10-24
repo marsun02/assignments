@@ -61,17 +61,50 @@ img {
     width: 100%;
 }
 
-@media screen and (max-width: 1200px) {
-    :root {
-        font-size: 110%;
+@media screen and (max-width: 1280px) {
+    .features {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+        gap: 20px;
     }
 
+    .feature-item {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .features {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .feature-item {
+        width: 40%;       
+    }
+}
+
+@media screen and (max-width: 720px) {
     .features {
         display: grid;
         grid-template-columns: auto;
-        gap: 20px;
     }
+
     .feature-item {
         width: 100%;
-    }    
+    }  
+}
+
+@media screen and (max-width: 480px) {
+    .feature-item {
+        border: 1px black solid;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .feature-item img {
+        display: none;
+    }
 }
