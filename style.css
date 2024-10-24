@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
-
 }
 
 body {
@@ -11,12 +10,11 @@ body {
     align-items: center;
     display: flex;
     flex-direction: column;
-
+    margin: 10px;
 }
 
 h1 {
     margin-top: 30px;
-
 }
 
 .assignment_box {
@@ -28,5 +26,4 @@ h1 {
     border-radius: 25px;
     align-content: center;
     background-color: antiquewhite;
-
 }
