@@ -39,3 +39,49 @@ body {
     box-sizing: border-box;
 
 }
+
+@media screen and (max-width: 1280px) {
+    .registration {
+        width: 60%;
+    }
+    input {
+        width: 80%;
+    }
+
+}
+@media screen and (max-width: 720px) {
+    .registration {
+        width: 60%;
+    }
+    header {
+        font-size: 80%;
+    }
+    input {
+        width: 70%;
+    }
+    select {
+        width: 60%;
+    }
+    p {
+        font-size: 100%;
+    }
+    
+}
+@media screen and (max-width: 480px) {
+    .registration {
+        width: 60%;
+    }
+    header {
+        font-size: 80%;
+    }
+    input {
+        width: 60%;
+    }
+    select {
+        width: 60%;
+    }
+    p {
+        font-size: 100%;
+    }
+}
+
