@@ -40,48 +40,81 @@ body {
 
 }
 
-@media screen and (max-width: 1280px) {
-    .registration {
-        width: 60%;
-    }
-    input {
-        width: 80%;
-    }
-
+input, select {
+    width: 40%;
 }
-@media screen and (max-width: 720px) {
+
+.radio-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.smallscreen {
+    visibility: hidden;
+    display: none;
+}
+
+@media screen and (max-width: 1280px) {
+    .header{
+        font-size: 100%;
+    }
+    input, select {
+        width: 40%;   
+    }
     .registration {
-        width: 60%;
+        width: 70%; 
     }
-    header {
-        font-size: 80%;
+}
+
+@media screen and (max-width: 720px) {
+    .header {
+        font-size: 85%;
     }
-    input {
+    input, select {
         width: 70%;
     }
-    select {
-        width: 60%;
+    .registration {
+        width: 80%;
     }
     p {
-        font-size: 100%;
+        font-size: 110%;
     }
     
 }
+
 @media screen and (max-width: 480px) {
     .registration {
-        width: 60%;
+        width: 90%;
+        padding: 15px;
     }
-    header {
-        font-size: 80%;
+    .header {
+        font-size: 75%;
     }
-    input {
-        width: 60%;
-    }
-    select {
-        width: 60%;
+    input, select {
+        width: 100%;
     }
     p {
         font-size: 100%;
     }
 }
 
+@media screen and (max-width: 360px) {
+    .registration {
+        display: none;
+    }
+    .smallscreen {
+        visibility: visible;
+        display: block;
+        font-size: 120%;
+        text-align: center;
+        padding: 20px;
+    }
+}
