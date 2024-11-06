@@ -26,7 +26,7 @@ console.log(title)
 
 /* Task  1.5 */
 function changeDisplay () {
-
+    
 }
 
 function changeVisibility () {
@@ -51,3 +51,10 @@ const technologies = [
     'Bootstrap',
     'Node.js'
 ];
+const techList = document.getElementById("tech");
+let listItems = "";
+
+technologies.forEach(tech=>{
+    listItems += "<li>" + tech + "</li>";
+});
+techList.innerHTML = listItems;
