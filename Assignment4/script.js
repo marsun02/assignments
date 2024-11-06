@@ -25,17 +25,28 @@ console.log(title)
 
 
 /* Task  1.5 */
+let box = document.getElementById("magic")
+
+let d1 = document.getElementById("btnDisplay")
+let d2 = document.getElementById("btnVisibility")
+let d3 = document.getElementById("btnReset")
+
 function changeDisplay () {
-    
+    box.style.display = "none";
 }
 
 function changeVisibility () {
-
+    box.style.visibility = "hidden";
 }
 
 function reset () {
-
+    box.style.visibility = "visible";
+    box.style.display = "block";
 }
+
+d1.addEventListener("click", changeDisplay);
+d2.addEventListener("click", changeVisibility);
+d3.addEventListener("click", reset);
 
 /* Task 1.6 */
 const technologies = [
