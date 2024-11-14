@@ -1,51 +1,52 @@
-// Initialize an empty list of tasks
+// Empty list of tasks
 const tasks = [];
 
-// Function to add a new task
+// Add a new task
 function addTask(event) {
-    event.preventDefault();  // Prevent the form from reloading the page
+    event.preventDefault();  // Prevents reload
 
-    // Get the task text from the input field
-    const taskText = document.getElementById('newTask').value;
+    // Get task text from input field
+    const taskText = document.getElementById('newTask').value.trim();
     if (taskText === '') {
         return ; // Don't add empty tasks
     }
 
-    // Create a new task object
+    // Create new task object
     const task = {
         text: taskText,
         completed: false
     };
 
-    // Add task to the tasks array
+    // Add task tasks array
     tasks.push(task);
 
-    // Create the task list item (li)
+    // Create task list item
     const li = document.createElement('li');
     const checkbox = document.createElement('input');
     checkbox.type = 'checkbox';
     checkbox.className = 'task-checkbox';
-
-    // Add task text and checkbox to the li element
+    
+    // Add task text and checkbox to li 
     li.innerHTML = taskText;
-    li.prepend(checkbox);  // Add the checkbox in front
+    // Add checkbox in front
+    li.prepend(checkbox);
 
-    // Create and append the delete button
+    // Create and append delete button
     const deleteBtn = document.createElement('button');
     deleteBtn.className = 'delete-btn';
     deleteBtn.textContent = 'X';
     li.appendChild(deleteBtn);
 
-    // Add the new task to the top of the list
+    // Add new task to top of list
     document.getElementById('todoList').prepend(li);
 
-    // Clear the input field
+    // Clear input field
     document.getElementById('newTask').value = '';
 
-    // Add event listener to delete the task when the delete button is clicked
+    // Add event listener to delete task when clicked
     deleteBtn.addEventListener('click', function() {
         li.remove();
-        // Remove task from the array
+        // Remove task
         const index = tasks.indexOf(task);
         if (index > -1) {
             tasks.splice(index, 1);
@@ -53,7 +54,7 @@ function addTask(event) {
         updateTaskCount();
     });
 
-    // Add event listener for the checkbox to toggle task completion
+    // Add event listener for checkbox to toggle completion
     checkbox.addEventListener('change', function() {
         task.completed = checkbox.checked;
         if (checkbox.checked) {
@@ -64,16 +65,16 @@ function addTask(event) {
         updateTaskCount();
     });
 
-    // Update the task count after adding a task
+    // Update task count after adding a task
     updateTaskCount();
 }
 
-// Update the task count: completed tasks / total tasks
+// Update task count
 function updateTaskCount() {
     const completedTasks = tasks.filter(task => task.completed).length;
     const totalTasks = tasks.length;
     document.getElementById('taskCount').textContent = `${completedTasks}/${totalTasks} completed`;
 }
 
-// Add event listener for the form submission
+// Add event listener for form submission
 document.getElementById('taskForm').addEventListener('submit', addTask);

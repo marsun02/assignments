@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo List</title>
+    <title>To-do List</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -73,20 +73,18 @@
     </style>
 </head>
 <body>
-
+    <img src="todo-background.jpg" alt="To-do List" style="width: 100%; height: 100%; position: absolute; z-index: -1; opacity: 0.1;">
     <div class="container">
-        <h2>Todo List</h2>
+        <h2>To-do List</h2>
         <form id="taskForm">
             <input type="text" id="newTask" placeholder="Add a new task..." required autofocus>
             <button type="submit" id="addTaskBtn">Add Task</button>
         </form>
 
         <ul id="todoList">
-            <!-- Tasks will be dynamically added here -->
         </ul>
 
         <div id="taskCount">
-            <!-- Completed tasks and total tasks will be displayed here -->
         </div>
     </div>
 
