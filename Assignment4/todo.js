@@ -6,7 +6,7 @@ function addTask(event) {
     event.preventDefault();  // Prevent the form from reloading the page
 
     // Get the task text from the input field
-    const taskText = document.getElementById('newTask').value;
+    const taskText = document.getElementById('newTask').value.trim();
     if (taskText === '') {
         return ; // Don't add empty tasks
     }
@@ -25,7 +25,7 @@ function addTask(event) {
     const checkbox = document.createElement('input');
     checkbox.type = 'checkbox';
     checkbox.className = 'task-checkbox';
-
+    
     // Add task text and checkbox to the li element
     li.innerHTML = taskText;
     li.prepend(checkbox);  // Add the checkbox in front
