@@ -1,53 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>IT2805 assignment 5: JavaScript </title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Assignment 4</h1>
 
-    <style>
-      .box{
-        /* Sets the size and position of each box */
-        width: 200px;
-        height: 200px;
-        background-color: #185D8B;
-        margin: 10px;
-
-        /* Sets the font within each box*/
-        color: #fff;
-        font-family: Helvetica, Arial, sans-serif;
-        text-align: center;
-        line-height: 200px;
-        font-size: 100px;
-      }
-
-      .buttons{
-        width: 200px;
-        margin: 10px;
-        text-align: center;
-      }
-    </style>
-  </head>
-  <body>
-
-    <h1 id='title'></h1>
-
-    <h2>Task  1.5</h2>
-    <div class='buttons'>
-      <button id="btnDisplay">Display: none </button> 
-      <button id="btnVisibility">Visibility: hidden</button>
-      <button id="btnReset">Reset</button>
+    <div class="assignment_box">
+        <a href="task1/">Task 1</a>
     </div>
-    <div class="box" id="magic"> 1 </div>
-    <div class='box'> 2 </div>
 
-    <h2>Task  1.6</h2>
-    <ul id='tech'>
-    </ul>
-
-
-    <script type="text/JavaScript" src="script.js"></script>
-    <!-- We include the script element at the bottom of the body, because it will then render all of the DOM before accessing the JavaScript.
-     This means that we can use JavaScript in elements above, and therefore be able to render and run them correctly. If the script element and
-     path/to/script.js was inserted before the script was used, we would get an error, and the functionality wouldn't work properly. -->
-  </body>
+    <div class="assignment_box">
+        <a href="task2/todo.html">Task 2</a>
+    </div>
+</body>
 </html>
